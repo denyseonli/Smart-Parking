@@ -5,44 +5,50 @@ import { Navigate } from "react-router-dom";
 function Dashboard(){
 return(
     <>
-    <div className="bg-gray-300 h-screen flex flex-cols" >
-        <div className="bg-gray-400 w-6/30 h-full rounded">
     
-       
-        <h1 className="font-bold text-xl ml-25 gap-2">SIMS</h1>
-        <p className="ml-20 font-bold text-xxl p-5">Welcome Admin 👋</p>
-            <div className="align-center items-center ml-20 mt-50 text-xl gap-10">
+    <div className="bg-gray-100 h-screen flex flex-cols" >
+        
+        <div className="bg-slate-900 h-full rounded">
+
+        <h1 className="font-bold text-xl text-white ml-25 gap-2">SIMS</h1>
+        <p className="ml-20 font-bold text-xxl text-white ">WELCOME</p>
+            <div className="align-center items-center ml-20 mt-50 text-xl gap-0 text-white">
                 
-            <button className="hover:text-blue-700 cursor-pointer">Home</button><br /><br />
-            <button className="hover:text-blue-700 cursor-pointer">Report</button><br /><br />
-            <button className="hover:text-blue-700 cursor-pointer">sparePart</button><br /><br />
-            <button className="hover:text-blue-700 cursor-pointer">stockIn</button><br /><br />
-            <button className="hover:text-blue-700 cursor-pointer">stockOut</button>
+            <button className="hover:text-blue-500 hover:scale-90 duration-90 cursor-pointer">🎪Home</button><br /><br />
+            <button className="hover:text-blue-500 hover:scale-90 duration-90 cursor-pointer">🎰Report</button><br /><br />
+            <button className="hover:text-blue-500 hover:scale-90 duration-90 cursor-pointer">📊sparePart</button><br /><br />
+            <button className="hover:text-blue-500 hover:scale-90 duration-90 cursor-pointer">📉stockIn</button><br /><br />
+            <button className="hover:text-blue-500 hover:scale-90 duration-90 cursor-pointer">🧩stockOut</button>
             
             </div>
-            <button className="border border-gray rounded-xl hover:bg-blue-200 h-8 w-25 ml-38 mt-30 cursor-pointer" onClick={()=>navigate('/login')}>Logout</button>
+            <button className="border border-gray rounded-xl hover:bg-blue-200 h-8 w-25 ml-30 mt-30 cursor-pointer text-white" onClick={()=>navigate('/login')}>Logout</button>
         </div>
 
-        
-        <div className="flex flex-cols gap-5">
+
+
+        <div className="flex flex-cols gap-5 ">
+
+            {/* <h1 className="text-2xl font-bold text-yellow-500">new text</h1> */}
+     
                     
-<div  className="bg-red-50 w-65 h-40 ml-2 mt-30 rounded-sm">
-    
+<div  className="bg-gray-300 hover:scale-90 duration-90 w-65 h-40 ml-2 mt-30 rounded-sm">
+    <p className="text-blue-400 text-xl ml-20 mt-15">SparePart🧩🧩</p>
+    <button className="text-black text-xl ml-43 mt-8 cursor-pointer hover:border border-gray-400 hover:bg-blue-200 hover:rounded hover:font-bold">More➡️</button>   
 </div>
-<div  className="bg-red-50 w-65 h-40 ml-10 mt-30 rounded-sm">
-    
+<div  className="bg-gray-300 hover:scale-90 duration-90 w-65 h-40 ml-10 mt-30 rounded-sm ">
+  <p className="text-blue-400 text-xl ml-20 mt-15"> StockIn📈📉 </p>
+  <button className="text-black text-xl ml-43 mt-8 cursor-pointer hover:border border-gray-400 hover:bg-blue-200 hover:rounded hover:font-bold">More➡️</button>
 </div>
-<div  className="bg-red-50 w-65 h-40 ml-10 mt-30 rounded-sm">
-    
+<div  className="bg-gray-300 hover:scale-90 duration-90 w-65 h-40 ml-10 mt-30 rounded-sm">
+    <p className="text-blue-400 text-xl ml-20 mt-15">StockOut📊</p>
+    <button className="text-black text-xl ml-43 mt-8 cursor-pointer hover:border border-gray-400 hover:bg-blue-200 hover:rounded hover:font-bold">More➡️</button>
 </div>
-<div  className="bg-red-50 w-65 h-40 ml-14 mt-30 rounded-sm">
-    
+<div  className="bg-gray-300 hover:scale-90 duration-90 w-65 h-40 ml-14 mt-30 rounded-sm">
+    <p className="text-blue-400 text-xl ml-20 mt-15">Report🎰</p>
+    <button className="text-black text-xl ml-43 mt-8 cursor-pointer hover:border border-gray-400 hover:bg-blue-200 hover:rounded hover:font-bold">More➡️</button>
 </div>
+
         </div>
-
-
-
-
         
     </div>
     </>

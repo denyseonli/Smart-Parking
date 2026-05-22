@@ -23,14 +23,15 @@ try {
 return(
 <>
 <div className="h-screen flex justify-center items-center">
-   <div className="p-8 bg-gray-100 shadow-xl">
+   <div className="p-8 bg-gray-100 shadow-xl hover:scale-110 duration-90">
       <h2 className="text-black-800 text-xl font-bold ml-20">Login Page</h2>
+
 <form onSubmit={handleLogin} className="flex flex-col gap-4">
-Email:
+ 📩Email:
 <input 
 className="border border-gray-400 px-2 rounded w-4/4"
 type="email" placeholder="enter your email" value={email} onChange={(e)=>setEmail(e.target.value)} required/>
-Password:
+ 🔑Password:
 <input 
 className="border border-gray-400 px-2 w-4/4"
 type="password" placeholder="enter your paasword" value={password} onChange={(e)=>setPassword(e.target.value)} required/>
